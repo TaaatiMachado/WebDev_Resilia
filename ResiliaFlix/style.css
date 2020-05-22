@@ -1,0 +1,64 @@
+header {
+    background-color: black;
+    padding: 5px;
+    
+}
+
+
+h1 {
+    color: yellow;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.boxmenu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+.corpo {
+
+height: 623px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 3px;
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    
+  }
+
+footer img {
+    margin-right: 10px;
+   
+}
+
+footer p{
+    text-align: center;
+}
