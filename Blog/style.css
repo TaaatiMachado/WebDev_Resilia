@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+	
+}
+
+.principal{
+    
+    background: black;
+	padding: 30px;
+}
+
+.titulo-principal {
+    padding-left: 50px;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+    background-image: url(9014-abstract-multicolor-simple-background.jpg);
+    text-transform: uppercase;
+    font-weight: bold;
+	font-size: 32px;
+
+}
+
+.titulo-post {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+p {
+    text-align: justify;
+    color: black
+}
+
+
+.post {
+    position: absolute;
+    left: 50px;
+    display: inline-block;
+	text-align: left;
+	width: 50%;
+	vertical-align: top;
+	margin: 50 50 50 50;
+	padding: 30px 20px;
+	box-sizing: border-box;
+    border: 5px solid rgb(3, 114, 114);
+    background-color: white;
+    color: black
+
+}
+
+.img {
+    float: right;
+    padding: 8px;
+}
+
+.posted {
+    color: black;
+}
