@@ -1,15 +1,20 @@
+
 header {
     background-color: black;
     padding: 5px;
     
 }
 
+body {
+    background-color: #c8c8c8;
+}
+
 
 h1 {
     color: yellow;
-    font-size: 25px;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Anton';
+    text-transform: uppercase;
 }
 
 
@@ -22,6 +27,7 @@ h1 {
 .boxmenu{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 a {
@@ -29,15 +35,35 @@ a {
     background-color: yellow;
     border-radius: 5px;
     margin-left: 25px;
-    padding: 5px;
-    font-family: Helvetica, sans-serif;
+    padding: 8px;
+    font-family: 'Anton';
     text-decoration: none;
+    font-size: 18px;
+    
 
 }
 
-.corpo {
+main {
+    display: flex;
+    justify-content: center;
+}
 
-height: 623px;
+.corpo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.cartaz{
+    border: 10px;
+    border-radius: 9px;
+    border-style: double;
+    border-color: black;
+    margin: 20px;
+
 }
 
 footer {
@@ -48,10 +74,10 @@ footer {
     padding: 3px;
     background-color: black;
     color: yellow;
-    padding: 10px;
     margin-bottom: 0px;
     width: 100%;
-    
+    padding: 10px;
+    box-sizing: border-box;
   }
 
 footer img {
