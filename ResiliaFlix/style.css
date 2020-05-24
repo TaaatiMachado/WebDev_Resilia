@@ -103,6 +103,35 @@ footer p{
     padding-top: 5px;
 }
 
+@media (max-width: 650px) { 
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    }
+
+    .menu {
+        align-items: center ;
+    }
+
+    
+    .corpo{
+    justify-content: center;
+    width: 90%;
+    }
+
+    .cartaz{
+    width: 100%;
+    }
+
+
 @media (max-width: 400px) { 
     
     h1 {
