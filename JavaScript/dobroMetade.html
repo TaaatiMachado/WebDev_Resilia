@@ -1,0 +1,45 @@
+<html>
+    <meta charset="UTF-8">
+    <title>~ Dobro e Metade ~</title>
+
+<body>
+    <script> 
+    
+
+        var nome = prompt("Informe seu nome:");
+            
+        function saudação() {
+        
+            document.write("Olá, " + nome + ", tudo bem?");
+            document.write("<br><br>")
+        }   
+
+        saudação();
+
+        var dobro = prompt(`${nome} , informe o número a ser dobrado:`);
+
+        function fazerMulti() {
+        
+            document.write (`O dobro de ${dobro} é: ${dobro * 2}`);
+            document.write("<br><br>")
+
+        }
+
+        fazerMulti();
+
+        
+        var metade = prompt(`${nome}, informe o número a ser dividido:`);
+    
+        function fazerDiv() {
+
+            document.write (`A metade de ${metade} é: ${metade / 2}`);
+            document.write("<br><br>")
+
+        }
+
+        fazerDiv();
+
+    </script>
+</body>
+
+</html>
