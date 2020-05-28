@@ -1,0 +1,34 @@
+<html>
+    <meta charset="UTF-8">
+    <title>~ Rateio de Laranjas~</title>
+
+<body>
+    <script> 
+
+        var numLaranjas = prompt(`Informe o número de laranjas a ser dividido:`);
+        var numVizinhos = prompt(`Informe quantos vizinhos entrarão no rateio:`);
+    
+        function divLaranjas (numLaranjas, numVizinhos){
+
+            return Math.trunc(numLaranjas / numVizinhos);
+        }
+
+        var divisão = divLaranjas (numLaranjas, numVizinhos);
+
+        document.write (`Cada vizinho receberá ${divisão} laranjas.`);
+        document.write("<br><br>")
+       
+        function sobraLaranjas (numLaranjas, numVizinhos){
+
+            return numLaranjas % numVizinhos;
+        }       
+
+        var sobra = sobraLaranjas (numLaranjas, numVizinhos)
+
+        document.write (`Joselito ficará com ${sobra} laranjas.`);
+        document.write("<br><br>");
+
+    </script>
+</body>
+
+</html>
