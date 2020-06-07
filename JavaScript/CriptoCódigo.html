@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>~ Criptografia de César ~</title>
+
+<!--Utilize o campo de script abaixo para resolver os problemas propostos!-->
+<script>
+       
+    function esconde(frase, salto) {
+  /*
+  1. Separar minha frase em letras - Ok
+  2. Pegar o código das letras - Ok
+  3. Adicionar o salto ao código das letras codigo(a) + 2 = c (para cada uma) - Ok 
+  4. Transformar letras de volta guardando num pote
+  5. juntar novas letras
+  6. retornar
+  */
+  
+  var caracteres = frase.split("");
+  var codigoCaracteres = [];
+  var letrasCodificadas = [];
+  
+  //mudando valor dos charcodes
+    for(var i = 0; i < caracteres.length; i++) {
+      var codigoLetra = caracteres[i].charCodeAt(0);
+      codigoCaracteres.push(codigoLetra + salto);
+    }
+  
+  //colocar letras dentro de letrasCodificadas a partir do código das letras
+    for (var i = 0; i < codigoCaracteres.length; i++ ) {
+      //String.fromCharCode() utilizada para transformar códigos em caracteres
+      letrasCodificadas.push(String.fromCharCode(codigoCaracteres[i]));
+    }
+  
+    return letrasCodificadas.join("");
+
+}
+
+            document.write(esconde("Ola mundo", 3));
+
+            document.write("<br><br>")
+
+
+    function revela(fraseCod, salto) {
+
+  var caracteres = fraseCod.split("");
+  var codigoCaracteres = [];
+  var letrasDecodificadas = [];
+  
+    for(var i = 0; i < caracteres.length; i++) {
+        var codigoLetra = caracteres[i].charCodeAt(0);
+        codigoCaracteres.push(codigoLetra - salto);
+    }
+  
+    for (var i = 0; i < codigoCaracteres.length; i++ ) {
+        letrasDecodificadas.push(String.fromCharCode(codigoCaracteres[i]));
+    }
+  
+  return letrasDecodificadas.join("");
+}
+
+            document.write(revela("Rod#pxqgr", 3));
+
+
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>~ Menu ~</title>
+
+<!--Utilize o campo de script abaixo para resolver os problemas propostos!-->
+<script>
+       
+        function exibeMenu (){
+
+            document.write ("1-Refrigerante <br><br> 2- Suco <br><br> 3-Água <br><br>");
+        }
+
+    exibeMenu ();
+
+    var escolha = prompt ("Escolha sua bebida:")
+
+        function escolhaMenu (escolha){
+        if (escolha == "1") {
+            document.write ("O garçom já vai trazer o seu refrigerante!");
+        
+        } else if (escolha == "2") {
+            document.write ("O garçom já vai trazer o seu suco!");
+        
+        } else if (escolha == "3") {
+            document.write ("O garçom já vai trazer a sua água!");
+        
+        } else {
+            document.write ("Qualquer coisa, é só chamar :)");
+        
+        }
+        }
+
+    escolhaMenu (escolha);
+
+</script>
